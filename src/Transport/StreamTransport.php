@@ -113,7 +113,7 @@ class StreamTransport implements TransportInterface
         throw new SocketTransportException($lastError ?: 'Could not connect to any host');
     }
 
-	public function close (): void
+	public function close(): void
 	{
 		stream_set_blocking($this->socket, true);
 
