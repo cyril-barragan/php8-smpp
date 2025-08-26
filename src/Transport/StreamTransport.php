@@ -125,7 +125,7 @@ class StreamTransport implements TransportInterface
 		fclose($this->socket);
 	}
 
-	public function isOpen (): bool
+	public function isOpen(): bool
 	{
 		if (!is_resource($this->socket)) {
 			return false;
