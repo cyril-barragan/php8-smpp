@@ -62,7 +62,6 @@ class StreamTransport implements TransportInterface
         } else {
             return $entry->getIpv4();
         }
-        $this->config->isForceIpv6() ? $entry->getIpv6() : $entry->getIpv4();
     }
 
     private function getStreamContext(): array
